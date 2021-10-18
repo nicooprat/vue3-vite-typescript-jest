@@ -6,6 +6,10 @@
 
 <script>
 import { defineComponent } from 'vue'
+import.meta.test = 'test'
+
+const files = import.meta.globEager('./*.css')
+
 export default defineComponent({
   name: 'Greeting',
 
